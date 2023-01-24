@@ -38,6 +38,10 @@ a{
   color: white;
 }
 
+.homediv {
+  margin-top: 100px;
+}
+
 .aboutdiv {
   background-color: #875d90;
 }
