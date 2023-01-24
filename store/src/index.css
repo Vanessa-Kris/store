@@ -1,10 +1,39 @@
 @import url('https://fonts.cdnfonts.com/css/wix-madefor-text');
-
+@import 'bootstrap/dist/css/bootstrap.min.css';
 body {
   font-family: 'Wix Madefor Text', sans-serif;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+:root {
+  --gray: #2c2c2c;
+}
+a{
+  text-decoration: none;
+  color: var(--gray);
+}
+.nav-item {
+  padding: 9px; 
+  font-size: 15px;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered h1 {
+  font-size: 80px;
+  color: white;
 }
