@@ -5,6 +5,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 const Home = () => {
     return (
@@ -18,15 +20,15 @@ const Home = () => {
 
       <Container className='  homediv'>
           <Row>
-            <Col xs={12} md={3}><img src="./black bag.jpeg" alt="Bag" style={{ width: '100%', height: '100%' }} /> <div>Bag <br/> 888</div> </Col>
-            <Col xs={12} md={3}><img src="./Pink Bag.png" alt="Bag" style={{ width: '100%', height: '100%' }} /> <div>Bag <br/> 888</div> </Col>
-            <Col xs={12} md={3}><img src="./Square Bag.jpeg" alt="Bag" style={{ width: '100%', height: '100%' }} /> <div>Bag <br/> 888</div> </Col>
-            <Col xs={12} md={3}><img src="./Red Bag.jpg" alt="Bag" style={{ width: '100%', height: '100%' }} /> <div>Bag <br/> 888</div> </Col>
+            <Col xs={12} md={3}><img src="./black bag.jpeg" alt="Bag" style={{ width: '100%', height: '80%' }} /> <div>Bag <br/> 888</div> </Col>
+            <Col xs={12} md={3}><img src="./Pink Bag.png" alt="Bag" style={{ width: '100%', height: '80%' }} /> <div>Bag <br/> 888</div> </Col>
+            <Col xs={12} md={3}><img src="./Square Bag.jpeg" alt="Bag" style={{ width: '100%', height: '80%' }} /> <div>Bag <br/> 888</div> </Col>
+            <Col xs={12} md={3}><img src="./Red Bag.jpg" alt="Bag" style={{ width: '100%', height: '80%' }} /> <div>Bag <br/> 888</div> </Col>
           </Row>
         </Container>
         
         <Container className='mb-5 homediv'>
-          <Row className='mt-5 '>
+          <Row className='mt-2 '>
             <Col xs={12} md={6} className='aboutdiv text-center text-white d-flex align-items-center justify-content-center'>
               <div>
                 <h1 className=' '>About Stunners</h1>
@@ -46,14 +48,15 @@ const Home = () => {
           </Row>
         </Container>
 
-        <Container className='mb-5 homediv'>
-        <Row className='mt-5 '>
-            <Col xs={12} md={6} className=' text-center  d-flex align-items-center justify-content-center'>
-            <h1 className=' '>Get Connected</h1> <br/>
-            <p>Bamenda, Cameroon</p> <br/>
-            <p>Stunners@gmail.com</p> <br/>
-            <p>650 39 33 69</p>
+        <Container className='mb-5 homediv p-5' style={{ background: '#0001' }}>
+        <Row className=' '>
+            <Col xs={12} md={6} className='text-center'>
+            <h1 className='mt-5'>Get in Touch</h1> 
+            <p className='mt-1'>Bamenda, Cameroon P.O Box 0000</p> 
+            <p className='mt-1'>Stunners@gmail.com</p> 
+            <p className='mt-1'>650 39 33 69</p>
             </Col>
+
             <Col>
             <Form>
             <Form.Group className="mb-3" controlId="formBasicName">
@@ -66,10 +69,10 @@ const Home = () => {
               <Form.Control type="email" placeholder="Enter email" />
               </Form.Group>
 
-              <Form.Group className="mb-3" controlId="formBasicText">
-                <Form.Label>Message</Form.Label>
-               <Form.Control type="text" placeholder="Enter message" />
-                </Form.Group>
+              <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+              <Form.Label>Message</Form.Label>
+             <Form.Control as="textarea" rows={3} />
+             </Form.Group>
 
                 <Button variant="primary" type="submit">
                 Submit
@@ -77,6 +80,80 @@ const Home = () => {
                  </Form>
             </Col>
             </Row>
+        </Container>
+
+        <Container className="text-center mb-5 homediv">
+        <h1 className = "p-3">Our Services</h1>
+        <Row>
+        <Col xs={12} md={3}>
+        <Card >
+      <Card.Img variant="top" src="./casual.jpeg" style={{  height: '400px' }}/>
+      <Card.Body>
+        <Card.Title>Casual Make Up.</Card.Title>
+        <Card.Text>
+          3000
+        </Card.Text>
+      </Card.Body>
+     
+      <Card.Body>
+      <Button variant="outline-dark">Book Now</Button>
+       
+      </Card.Body>
+    </Card>
+        </Col>
+
+        <Col xs={12} md={3}>
+        <Card >
+      <Card.Img variant="top" src="./jpeg(12)" style={{  height: '400px' }}/>
+      <Card.Body>
+        <Card.Title>Full face Glam.</Card.Title>
+        <Card.Text>
+         5000 
+        </Card.Text>
+      </Card.Body>
+     
+      <Card.Body>
+      <Button variant="outline-dark">Book Now</Button>
+       
+      </Card.Body>
+    </Card>
+        </Col>
+
+        <Col xs={12} md={3}>
+        <Card >
+      <Card.Img variant="top" src="./Bella.jpeg" style={{  height: '400px' }}/>
+      <Card.Body>
+        <Card.Title>Traditional Glam.</Card.Title>
+        <Card.Text>
+          15,000
+        </Card.Text>
+      </Card.Body>
+     
+      <Card.Body>
+      <Button variant="outline-dark">Book Now</Button>
+       
+      </Card.Body>
+    </Card>
+        </Col>
+
+        <Col xs={12} md={3}>
+        <Card >
+      <Card.Img variant="top" src="./bride.jpeg" style={{  height: '400px' }}/>
+      <Card.Body>
+        <Card.Title>Bridal Make Over.</Card.Title>
+        <Card.Text>
+          30,000
+        </Card.Text>
+      </Card.Body>
+     
+      <Card.Body>
+      <Button variant="outline-dark">Book Now</Button>
+       
+      </Card.Body>
+    </Card>
+        </Col>
+
+        </Row>
         </Container>
         </>
     )

@@ -4,7 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 const Layout = () => {
   return (
     <>
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg bg-white" style={{ height: '70px' }}>
       <div class="container-fluid">
       <a class="navbar-brand" href="#Home">Stunners</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,25 +16,25 @@ const Layout = () => {
             <Link to="/">Home</Link>
           </li>
           <li class="nav-item">
-            <Link to="/blogs">About Us</Link>
+            <Link to="/about">About Us</Link>
           </li>
           <li class="nav-item">
             <Link to="/contact">Contact</Link>
           </li>
           <li class="nav-item">
-            <Link to="/contact">FAQ</Link>
+            <Link to="/faq">FAQ</Link>
           </li>
           <li class="nav-item">
-            <Link to="/contact">Store Policies</Link>
+            <Link to="/policy">Store Policies</Link>
           </li>
           <li class="nav-item">
-            <Link to="/contact">Testimonials</Link>
+            <Link to="/testimonials">Testimonials</Link>
           </li>
           <li class="nav-item">
-            <Link to="/contact">Shop</Link>
+            <Link to="/shop">Shop</Link>
           </li>
           <li class="nav-item">
-            <Link to="/contact">Book online</Link>
+            <Link to="/booking">Book online</Link>
           </li>
         </ul>
         </div>
@@ -42,6 +42,8 @@ const Layout = () => {
       </nav>
 
       <Outlet />
+
+      <footer className= "text-center fixed-bottom p-3" style={{ background: '#0001', height: '50px', position: 'relative' }}> ©2023 by Stunners. </footer>
     </>
   )
 };
