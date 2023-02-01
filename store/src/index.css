@@ -20,7 +20,7 @@ a{
   font-size: 15px;
 }
 
-.banner {
+.home {
   position: relative;
   text-align: center;
   color: white;
@@ -39,9 +39,18 @@ a{
 }
 
 .homediv {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .aboutdiv {
   background-color: #875d90;
+}
+
+@media (max-width: 900px) {
+  .aboutdiv {
+    background-color: #875d90;
+   width: 95%;
+    padding: 20px;
+    margin: 10px;
+  }
 }

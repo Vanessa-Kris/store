@@ -6,13 +6,15 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
+
 
 const Home = () => {
     return (
-      <> <Container className='banner'>
-        <img src="./tamara-unsplash.jpg" alt="Bag" style={{ width: '100%', height: '100%' }} />
+      <> <Container className='home'>
+             
+        <img src="./jamesblackbag.jpg" alt="Bag" style={{ width: '100%', height: '100%' }} />
         <div class="centered">
+       
           <h1>Daily Deals</h1>
           <button type="button" class="btn btn-outline-light">Shop Now</button>
         </div>
@@ -20,17 +22,17 @@ const Home = () => {
 
       <Container className='  homediv'>
           <Row>
-            <Col xs={12} md={3}><img src="./black bag.jpeg" alt="Bag" style={{ width: '100%', height: '80%' }} /> <div>Bag <br/> 888</div> </Col>
-            <Col xs={12} md={3}><img src="./Pink Bag.png" alt="Bag" style={{ width: '100%', height: '80%' }} /> <div>Bag <br/> 888</div> </Col>
-            <Col xs={12} md={3}><img src="./Square Bag.jpeg" alt="Bag" style={{ width: '100%', height: '80%' }} /> <div>Bag <br/> 888</div> </Col>
-            <Col xs={12} md={3}><img src="./Red Bag.jpg" alt="Bag" style={{ width: '100%', height: '80%' }} /> <div>Bag <br/> 888</div> </Col>
+            <Col xs={6} md={3}><img src="./perfumewall.jpg" alt="Bag" style={{ width: '100%', height: '90%', padding: '3px' }} /> <div>Perfumes</div> </Col>
+            <Col xs={6} md={3}><img src="./Pink Bag.png" alt="Bag" style={{ width: '100%', height: '90%', padding: '3px' }} /> <div>Bags </div> </Col>
+            <Col xs={6} md={3}><img src="./africachain.jpeg" alt="Bag" style={{ width: '100%', height: '90%', padding: '3px' }} /> <div>Accessories </div> </Col>
+            <Col xs={6} md={3}><img src="./Square Bag.jpeg" alt="Bag" style={{ width: '100%', height: '90%', padding: '3px' }} /> <div>Bags </div> </Col>
           </Row>
         </Container>
         
         <Container className='mb-5 homediv'>
-          <Row className='mt-2 '>
-            <Col xs={12} md={6} className='aboutdiv text-center text-white d-flex align-items-center justify-content-center'>
-              <div>
+          <Row className=' '>
+            <Col xs={12} md={6} className='aboutdiv text-center text-white d-flex align-items-center '>
+              <div >
                 <h1 className=' '>About Stunners</h1>
                 <p>We founded Stunners with one goal in mind:
                  providing a high-quality, smart, and reliable 
@@ -85,9 +87,9 @@ const Home = () => {
         <Container className="text-center mb-5 homediv">
         <h1 className = "p-3">Our Services</h1>
         <Row>
-        <Col xs={12} md={3}>
-        <Card >
-      <Card.Img variant="top" src="./casual.jpeg" style={{  height: '400px' }}/>
+        <Col xs={6} md={3}>
+        <Card>
+      <Card.Img variant="top" src="./casual.jpeg" style={{  height: '100%' }}/>
       <Card.Body>
         <Card.Title>Casual Make Up.</Card.Title>
         <Card.Text>
@@ -102,9 +104,9 @@ const Home = () => {
     </Card>
         </Col>
 
-        <Col xs={12} md={3}>
-        <Card >
-      <Card.Img variant="top" src="./jpeg(12)" style={{  height: '400px' }}/>
+        <Col xs={6} md={3}>
+        <Card>
+      <Card.Img variant="top" src="./jpeg(12)" style={{  height: '100%' }}/>
       <Card.Body>
         <Card.Title>Full face Glam.</Card.Title>
         <Card.Text>
@@ -119,9 +121,9 @@ const Home = () => {
     </Card>
         </Col>
 
-        <Col xs={12} md={3}>
-        <Card >
-      <Card.Img variant="top" src="./Bella.jpeg" style={{  height: '400px' }}/>
+        <Col xs={6} md={3}>
+        <Card>
+      <Card.Img variant="top" src="./Bella.jpeg" style={{  height: '100%' }}/>
       <Card.Body>
         <Card.Title>Traditional Glam.</Card.Title>
         <Card.Text>
@@ -136,9 +138,9 @@ const Home = () => {
     </Card>
         </Col>
 
-        <Col xs={12} md={3}>
-        <Card >
-      <Card.Img variant="top" src="./bride.jpeg" style={{  height: '400px' }}/>
+        <Col xs={6} md={3}>
+        <Card>
+      <Card.Img variant="top" src="./bride.jpeg" style={{  height: '100%' }}/>
       <Card.Body>
         <Card.Title>Bridal Make Over.</Card.Title>
         <Card.Text>

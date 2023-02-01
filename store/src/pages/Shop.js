@@ -2,10 +2,11 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-//import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+
 
 
 const Shop = () => {
@@ -24,8 +25,9 @@ const Shop = () => {
     </Card.Body>
    
     <Card.Body>
-    <Button variant="outline-dark">Book Now</Button>
-    <FontAwesomeIcon icon={faEnvelope} />
+    {/* <Button variant="outline-dark">Book Now</Button> */}
+    <FontAwesomeIcon icon={faCartShopping} size="lg" className="px-1"/>
+    <FontAwesomeIcon icon={faHeart} size="lg" className="px-1"/>
      
     </Card.Body>
   </Card>
