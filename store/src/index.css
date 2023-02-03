@@ -2,6 +2,7 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 body {
   font-family: 'Wix Madefor Text', sans-serif;
+  background-color: bisque;
 }
 
 /* code {
@@ -10,41 +11,50 @@ body {
 } */
 :root {
   --gray: #2c2c2c;
+  --brown: #9F684C;
 }
 a{
   text-decoration: none;
   color: var(--gray);
 }
-.nav-item {
-  padding: 9px; 
-  font-size: 15px;
+a:hover {
+  color: var(--brown);
 }
-
 .home {
   position: relative;
   text-align: center;
-  color: white;
+  /* color: white; */
+}
+
+.banner-text {
+  margin-top: 120px;
+  font-size: 80px;
+  font-style: italic;
 }
 
 /* Centered text */
-.centered {
+/* .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 .centered h1 {
   font-size: 80px;
   color: white;
 }
 
 .homediv {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
-.aboutdiv {
+/* .aboutdiv {
   background-color: #875d90;
-}
+} */
+
+/* .navbar-collapse {
+  background: rgb(0, 0, 0);
+} */
 
 @media (max-width: 900px) {
   .aboutdiv {
@@ -52,5 +62,11 @@ a{
    width: 95%;
     padding: 20px;
     margin: 10px;
+  }
+
+  .banner-text {
+    margin-top: 10px;
+    font-size: 40px;
+    font-style: italic;
   }
 }

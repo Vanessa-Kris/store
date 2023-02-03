@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+//import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -10,14 +10,24 @@ import Card from 'react-bootstrap/Card';
 
 const Home = () => {
     return (
-      <> <Container className='home'>
-             
+      <Container fluid> <Container className='home'>
+      <Row>
+        <Col xs={8} md={7}>
+        <h1 class= " banner-text">All your fashion needs met! All in one place</h1>
+        {/* <h4>Easy ordering process and fast delivery</h4> */}
+          <button type="button" class="btn btn-dark">Shop Now</button>
+        </Col>
+        <Col xs={4} md={5}>
+        <img src="./Womens-Handbag-PNG-Image.png" alt="Bag" style={{ width: '100%', height: '100%' }}/>
+        </Col>
+      </Row>
+{/*              
         <img src="./jamesblackbag.jpg" alt="Bag" style={{ width: '100%', height: '100%' }} />
         <div class="centered">
        
           <h1>Daily Deals</h1>
           <button type="button" class="btn btn-outline-light">Shop Now</button>
-        </div>
+        </div> */}
         </Container>
 
       <Container className='  homediv'>
@@ -31,7 +41,12 @@ const Home = () => {
         
         <Container className='mb-5 homediv'>
           <Row className=' '>
-            <Col xs={12} md={6} className='aboutdiv text-center text-white d-flex align-items-center '>
+
+          <Col xs={12} md={4}>
+            <img src="./logo.png" alt="Bag" style={{ width: '100%', height: '100%' }} />
+            </Col>
+            
+            <Col xs={12} md={8} className=' text-center  d-flex align-items-center '>
               <div >
                 <h1 className=' '>About Stunners</h1>
                 <p>We founded Stunners with one goal in mind:
@@ -44,9 +59,7 @@ const Home = () => {
                   Check it out for yourself!</p>
               </div>
             </Col>
-            <Col xs={12} md={6}>
-            <img src="./tamara-unsplash.jpg" alt="Bag" style={{ width: '100%', height: '100%' }} />
-            </Col>
+            
           </Row>
         </Container>
 
@@ -157,7 +170,7 @@ const Home = () => {
 
         </Row>
         </Container>
-        </>
+        </Container>
     )
   };
   

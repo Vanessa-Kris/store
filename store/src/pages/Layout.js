@@ -1,45 +1,47 @@
 import { Outlet, Link } from "react-router-dom";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 const Layout = () => {
   return (
     <>
-      <nav class="navbar navbar-expand-lg bg-white" style={{ height: '70px' }}>
-      <div class="container">
-      <a class="navbar-brand" href="#Home">Stunners</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <Link to="/">Home</Link>
-          </li>
-          <li class="nav-item">
-            <Link to="/about">About Us</Link>
-          </li>
-          <li class="nav-item">
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li class="nav-item">
-            <Link to="/faq">FAQ</Link>
-          </li>
-          <li class="nav-item">
-            <Link to="/policy">Store Policies</Link>
-          </li>
-          <li class="nav-item">
-            <Link to="/testimonials">Testimonials</Link>
-          </li>
-          <li class="nav-item">
-            <Link to="/shop">Shop</Link>
-          </li>
-          <li class="nav-item">
-            <Link to="/booking">Book online</Link>
-          </li>
-        </ul>
-        </div>
-        </div>
-      </nav>
+      <Navbar collapseOnSelect expand="lg"  >
+      <Container>
+      <Navbar.Brand href="#home">
+            <img
+              alt=""
+              src="./logo.png"
+              width="40"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}
+           Stunners Galleria
+          </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto ">
+          <Link className="px-2" to="/">Home</Link>
+          <Link className="px-2" to="/about">About</Link>
+          <Link className="px-2" to="/contact">Contact</Link>
+          <Link className="px-2" to="/shop">Shop</Link>
+          <Link className="px-2" to="/faq">FAQs</Link>
+          <Link className="px-2" to="/policy">Store Policy</Link>
+          <Link className="px-2" to="/testimonials">Testimonials</Link>
+          <Link className="px-2" to="/booking">Booking</Link>
+            {/* <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="about">About Us</Nav.Link>
+            <Nav.Link href="shop">Shop</Nav.Link>
+            <Nav.Link href="contact">Contact Us</Nav.Link>
+            <Nav.Link href="#pricing">FAQ</Nav.Link>
+            <Nav.Link href="#pricing">Store Policy</Nav.Link>
+            <Nav.Link href="#pricing">Testimonials</Nav.Link>
+            <Nav.Link href="#pricing">Booking</Nav.Link> */}
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
 
       <Outlet />
 
